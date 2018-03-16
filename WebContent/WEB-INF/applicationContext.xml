@@ -17,10 +17,10 @@
 			            http://mybatis.org/schema/mybatis-spring 
 			            http://mybatis.org/schema/mybatis-spring.xsd ">
 			      
-	 <!-- mybatis:scan会将org.fkit.mapper包里的所有接口当作mapper配置，之后可以自动引入mapper类-->  
+	 <!-- mybatis:scan会将dao包里的所有接口当作mapper配置，之后可以自动引入mapper类-->  
     <mybatis:scan base-package="org.csu.pms.dao"/>   
        
-	 <!-- 扫描org.fkit包下面的java文件，有Spring的相关注解的类，则把这些类注册为Spring的bean -->
+	 <!-- 扫描pms包下面的java文件，有Spring的相关注解的类，则把这些类注册为Spring的bean -->
     <context:component-scan base-package="org.csu.pms"/>
     
 	<!-- 使用PropertyOverrideConfigurer后处理器加载数据源参数 -->

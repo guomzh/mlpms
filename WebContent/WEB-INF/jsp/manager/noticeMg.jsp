@@ -144,8 +144,7 @@
             <form:input  type="text" class="form-control" id="pictureAddress" name="pictureAddress" path="pictureAddress"/>
           		<button id="choose" for="file" type="button" style="margin-left:500px" class="btn btn-primary btn-sm" >
 		    	选择图片
-		    	</button>
-          
+		    	</button>         
           </div>
           <input style="display: none" type="file" id="file1" name="pic" accept="image/*" onchange="document.getElementById('pictureAddress').value=this.value">
           <div class="modal-footer">
